@@ -1,0 +1,28 @@
+<view class='divider'></view>
+
+<view class='cell'>
+    <navigator class='cell-item arrow'>
+        <text>个人信息</text>
+    </navigator>
+    <view class='cell-item'>
+        <radio-group bindchange="radioChangeHandle" data-para="参数">
+            <radio color="#5B9CFE" checked value="male"></radio>男
+            <radio color="#5B9CFE" value="female"></radio>女
+            <radio color="#5B9CFE" disabled></radio>保密
+        </radio-group>
+    </view>
+    <view class='cell-item'>
+        <switch color='#5B9CFE' />
+    </view>
+</view>
+
+<!--wxml-->
+<wxs module="foo">
+    // 这里可以导出一个对象，这个对象可以直接在界面上使用 
+    module.exports = {
+        sum: function(a, b) {
+            return a + b;
+        }
+    };
+</wxs>
+<!-- <view> {{ foo.sum(1,2) }} </view> -->
